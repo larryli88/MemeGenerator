@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <form action = "http://127.0.0.1:8080/choose" method = "POST">
+            <input type="radio" id="0" name="img" value="0">
+            <label for="0">0</label>
+            <img src="{{url_for('static', filename='input0.jpg')}}"><br>
+            <input type="radio" id="1" name="img" value="1">
+            <label for="1">1</label>
+            <img src="{{url_for('static', filename='input1.jpg')}}"><br>
+            <input type="radio" id="2" name="img" value="2">
+            <label for="2">2</label>
+            <img src="{{url_for('static', filename='input2.jpg')}}"><br>
+            <input type="radio" id="3" name="img" value="3">
+            <label for="3">3</label>
+            <img src="{{url_for('static', filename='input3.jpg')}}"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
