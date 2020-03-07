@@ -20,7 +20,7 @@ $ python3 app.py
 Then open `index.html`
 
 ## Built With
-* [Flask](https://https://flask.palletsprojects.com/en/1.1.x/.com) - A lightweight WSGI web application framework
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/.com) - A lightweight WSGI web application framework
 
 ## Author
 * **Larry Li**
