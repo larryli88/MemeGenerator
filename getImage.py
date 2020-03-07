@@ -14,8 +14,11 @@ def getImg(search_text):
     r = requests.get(url = URL).json()
 
     # save the first 4 results
+    imgs = []
     for i in range(0, 4):
         img = r['photos']['photo'][i]
         res_img = "https://farm{}.staticflickr.com/{}/{}_{}.jpg"
         res_img = res_img.format(img['farm'], img['server'], img['id'], img['secret'])
-        urllib.request.urlretrieve(res_img, "./static/input" + str(i) + ".jpg")
+        imgs.append(res_img)
+        #urllib.request.urlretrieve(res_img, "./static/input" + str(i) + ".jpg")
+    return imgs
