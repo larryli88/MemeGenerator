@@ -1,19 +1,59 @@
 <html>
-    <body>
+<head>
+    <title>Meme Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Nav bar -->
+<nav class="navbar navbar-light blue lighten-4">
+   <a class="navbar-brand">Meme Generator</a>
+</nav>
+<div class="container">
+<div class="row mt-5 mb-5">
+    <div class="col-md-3">
         <form action = "http://127.0.0.1:8080/choose" method = "POST">
-            <input type="radio" id="0" name="img" value="{{ res0 }}">
-            <label for="0">0</label>
-            <img src="{{ res0 }}"><br>
-            <input type="radio" id="1" name="img" value="{{ res1 }}">
-            <label for="1">1</label>
-            <img src="{{ res1 }}"><br>
-            <input type="radio" id="2" name="img" value="{{ res2 }}">
-            <label for="2">2</label>
-            <img src="{{ res2 }}"><br>
-            <input type="radio" id="3" name="img" value="{{ res3 }}">
-            <label for="3">3</label>
-            <img src="{{ res3 }}"><br>
-            <input type="submit" value="Submit">
+        <input hidden name = "imgFile" id="imgFile" value = "{{ res0 }}">
+        <input type="image" src="{{ res0 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res0 }}">
         </form>
-    </body>
+    </div>
+    <div class="col-md-3">
+        <form action = "http://127.0.0.1:8080/choose" method = "POST">
+        <input hidden name = "imgFile" id="imgFile" value = "{{ res1 }}">
+        <input type="image" src="{{ res1 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res1 }}">
+        </form>
+    </div>
+    <div class="col-md-3">
+        <form action = "http://127.0.0.1:8080/choose" method = "POST">
+        <input hidden name = "imgFile" id="imgFile" value = "{{ res2 }}">
+        <input type="image" src="{{ res2 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res2 }}">
+        </form>
+    </div>
+    <div class="col-md-3">
+        <form action = "http://127.0.0.1:8080/choose" method = "POST">
+        <input hidden name = "imgFile" id="imgFile" value = "{{ res3 }}">
+        <input type="image" src="{{ res3 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res3 }}">
+        </form>
+    </div>
+</div>
+</div>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+</body>
 </html>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Meme Generator</title>
@@ -13,35 +14,38 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
 </head>
+
+
 <body>
+
 <!-- Nav bar -->
 <nav class="navbar navbar-light blue lighten-4">
    <a class="navbar-brand">Meme Generator</a>
 </nav>
-<!-- Image container -->
+
+   
+<!-- Search form -->
 <div class="container">
-<div class="row mt-5 mb-1">
-    <div class="col" align="center">
-        <img src="{{ img }}" class="img-fluid z-depth-1">
-    </div>
-    
-</div>
-<div class="row mb-3">
-    <div class="col" align="center">
-        <form action = "http://127.0.0.1:8080/index" method = "GET" class="md-form">
-            <button class="btn aqua-gradient btn-rounded btn-sm" type="submit">Start Over</button>
-        </form>
-    </div>
-</div>
+   <div class="row">
+      <div class="col-md" align="center">
+         <form action = "http://127.0.0.1:8080/search" method = "POST" class="md-form mb-4">
+            <input class="form-control mr-sm-2" type="text" name = "search_input" id = "search_input" placeholder="search image" aria-label="Search">
+            <button class="btn aqua-gradient btn-rounded btn-sm" type="submit">Search</button>
+         </form>
+      </div>
+   </div>
 </div>
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
 </body>
 </html>
+

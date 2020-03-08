@@ -24,7 +24,7 @@ def search():
 @app.route('/choose', methods=['GET', 'POST'])
 def choose():
     if request.method == 'POST':
-        imgUrl = request.form['img']
+        imgUrl = request.form['imgFile']
         savedImg = "input" + (str)(time.time()) + ".jpg"
         urllib.request.urlretrieve(imgUrl, "./static/" + savedImg)
         # rename the chosen image to input.jpg for adding text
@@ -40,6 +40,12 @@ def add():
         #print(imgFile)
         outFile = addT(add_text, imgFile)
         return render_template('image_text.html', img=url_for('static', filename=outFile))
+
+# api for adding text to the chosen image
+@app.route('/index', methods=['GET', 'POST'])
+def index():
+    if request.method == 'GET':
+        return render_template('index.html')
 
 if __name__ =="__main__":
     app.run(debug=True,port=8080)
