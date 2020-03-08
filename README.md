@@ -7,7 +7,6 @@ The program is written in Python 3.7. Prerequisites are listed below.
 * flask                      1.1.1
 * requests                  2.23.0
 * Pillow                    7.0.0
-
 You can install all prerequisites in a virtual environment
 ```
 $ python3 -m venv env
