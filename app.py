@@ -15,9 +15,9 @@ def start():
 # api for searching image matching user's input
 @app.route('/search', methods=['GET', 'POST'])
 def search():
-    if not request.form['search_input']:
-        return render_template('index.html')
     if request.method == 'POST': 
+        if not request.form['search_input']:
+            return render_template('index.html')
         search_text = request.form['search_input']
         imgs = getImg(search_text)
         # if their are less than 4 images in result, prompt user to try another key word
