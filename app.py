@@ -7,10 +7,10 @@ import os
 import time
 app = Flask(__name__)
 
-# debug
+# starting the web app
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def start():
+    return render_template('index.html', hidden="hidden")
 
 # api for searching image matching user's input
 @app.route('/search', methods=['GET', 'POST'])
