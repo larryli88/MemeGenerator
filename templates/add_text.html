@@ -18,19 +18,18 @@
 <nav class="navbar navbar-light blue lighten-4">
    <a class="navbar-brand">Meme Generator</a>
 </nav>
-
+<!-- Adding text -->
 <div class="container">
-<div class="row mt-5 mb-3">
-    <div class="col" align="center">
-        <img src="{{ inputImg }}" class="img-fluid z-depth-1">
-        <form action = "http://127.0.0.1:8080/add" method = "POST" class="md-form mb-4">
-            <button class="btn aqua-gradient btn-rounded btn-sm" type="submit">Add</button>
-            <input hidden name = "imgFile" id="imgFile" value = "{{ inputImg }}">
-            <input class="form-control mr-sm-2" type="text" name = "add_input" id = "add_input"  placeholder="add text" aria-label="Search">
-            
-        </form>
+    <div class="row mt-5 mb-3">
+        <div class="col" align="center">
+            <img src="{{ inputImg }}" class="img-fluid z-depth-1">
+            <form action = "http://127.0.0.1:8080/add" method = "POST" class="md-form mb-4">
+                <button class="btn aqua-gradient btn-rounded btn-sm" type="submit">Add</button>
+                <input hidden name = "imgFile" id="imgFile" value = "{{ inputImg }}">
+                <input class="form-control mr-sm-2" type="text" name = "add_input" id = "add_input"  placeholder="add text" aria-label="Search"> 
+            </form>
+        </div>
     </div>
-</div>
 </div>
 
 <!-- JQuery -->

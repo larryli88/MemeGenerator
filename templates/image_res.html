@@ -18,33 +18,34 @@
 <nav class="navbar navbar-light blue lighten-4">
    <a class="navbar-brand">Meme Generator</a>
 </nav>
+<!-- Result Images List -->
 <div class="container">
-<div class="row mt-5 mb-5">
-    <div class="col-md-3">
-        <form action = "http://127.0.0.1:8080/choose" method = "POST">
-        <input hidden name = "imgFile" id="imgFile" value = "{{ res0 }}">
-        <input type="image" src="{{ res0 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res0 }}">
-        </form>
+    <div class="row mt-5 mb-5">
+        <div class="col-md-3">
+            <form action = "http://127.0.0.1:8080/choose" method = "POST">
+            <input hidden name = "imgFile" id="imgFile" value = "{{ res0 }}">
+            <input type="image" src="{{ res0 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res0 }}">
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form action = "http://127.0.0.1:8080/choose" method = "POST">
+            <input hidden name = "imgFile" id="imgFile" value = "{{ res1 }}">
+            <input type="image" src="{{ res1 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res1 }}">
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form action = "http://127.0.0.1:8080/choose" method = "POST">
+            <input hidden name = "imgFile" id="imgFile" value = "{{ res2 }}">
+            <input type="image" src="{{ res2 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res2 }}">
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form action = "http://127.0.0.1:8080/choose" method = "POST">
+            <input hidden name = "imgFile" id="imgFile" value = "{{ res3 }}">
+            <input type="image" src="{{ res3 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res3 }}">
+            </form>
+        </div>
     </div>
-    <div class="col-md-3">
-        <form action = "http://127.0.0.1:8080/choose" method = "POST">
-        <input hidden name = "imgFile" id="imgFile" value = "{{ res1 }}">
-        <input type="image" src="{{ res1 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res1 }}">
-        </form>
-    </div>
-    <div class="col-md-3">
-        <form action = "http://127.0.0.1:8080/choose" method = "POST">
-        <input hidden name = "imgFile" id="imgFile" value = "{{ res2 }}">
-        <input type="image" src="{{ res2 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res2 }}">
-        </form>
-    </div>
-    <div class="col-md-3">
-        <form action = "http://127.0.0.1:8080/choose" method = "POST">
-        <input hidden name = "imgFile" id="imgFile" value = "{{ res3 }}">
-        <input type="image" src="{{ res3 }}" class="img-fluid z-depth-1" alt="Submit" name="img" value="{{ res3 }}">
-        </form>
-    </div>
-</div>
 </div>
 
 <!-- JQuery -->

@@ -14,23 +14,26 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
 </head>
-
-
 <body>
-
 <!-- Nav bar -->
 <nav class="navbar navbar-light blue lighten-4">
    <a class="navbar-brand">Meme Generator</a>
 </nav>
-
-   
+<!-- Invalid keyword -->
+<div class="container">
+   <div class="row mt-4">
+      <div class="col-md" align="center">
+         <p {{ hidden }} > Try another key word! </p>
+      </div>
+   </div>
+</div>
 <!-- Search form -->
 <div class="container">
    <div class="row">
       <div class="col-md" align="center">
          <form action = "http://127.0.0.1:8080/search" method = "POST" class="md-form mb-4">
             <input class="form-control mr-sm-2" type="text" name = "search_input" id = "search_input" placeholder="search image" aria-label="Search">
-            <button class="btn aqua-gradient btn-rounded btn-sm" type="submit">Search</button>
+            <button class="btn aqua-gradient btn-rounded btn-sm mt-2" type="submit">Search</button>
          </form>
       </div>
    </div>
